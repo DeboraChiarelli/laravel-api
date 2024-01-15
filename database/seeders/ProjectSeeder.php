@@ -11,9 +11,9 @@ class ProjectSeeder extends Seeder
     /**
      * Run the database seeds.
      */
-    public function run(): void
+    public function run(Faker $faker): void
     {
-        $faker = Faker::create();
+        //$faker = Faker::create();
 
         foreach (range(1, 10) as $index) {
             Project::create([
